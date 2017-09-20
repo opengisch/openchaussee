@@ -13,7 +13,7 @@
 -- Name: t_current_geometries; Type: TABLE; Schema: chaussee_dev; Owner: spch_admin; Tablespace: 
 --
 
-CREATE TABLE t_current_geometries (
+CREATE TABLESSS t_current_geometries (
     cgm_iliid text NOT NULL,
     cgm_geom public.geometry(Polygon,2056),
     cgm_asg_iliid text,
