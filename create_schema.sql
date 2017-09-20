@@ -1,1 +1,2 @@
-create new schema
+create new schema;
+create new toto;
