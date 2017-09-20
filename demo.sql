@@ -6,28 +6,7 @@
 -- Dumped by pg_dump version 9.4.0
 -- Started on 2017-09-20 14:23:10
 
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
 
---
--- TOC entry 9 (class 2615 OID 305423937)
--- Name: chaussee_dev; Type: SCHEMA; Schema: -; Owner: spch_admin
---
-
-CREATE SCHEMA chaussee_dev;
-
-
-ALTER SCHEMA chaussee_dev OWNER TO spch_admin;
-
-SET search_path = chaussee_dev, pg_catalog;
-
-SET default_tablespace = '';
-
-SET default_with_oids = false;
 
 --
 -- TOC entry 300 (class 1259 OID 305458061)
