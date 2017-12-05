@@ -99,3 +99,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+LRS_Geometry/Schema_mistra.backup
+LRS_Geometry/LRS_Pavement_Layer_v2.backup
