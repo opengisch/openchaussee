@@ -15,6 +15,9 @@ BEGIN
     NEW.pvl_end_u/ST_Length( (SELECT asg_geom FROM chaussee_dev.t_axissegments WHERE asg_iliid = NEW.pvl_asg_iliid ) )
     )
   );
+
+  NEW.pvl_geom_area = ST_Intersection( ST_Buffer( NEW.pvl_line_geom, 20 ), ( SELECT ST_Collect( cgm_geom ) FROM chaussee_dev.t_current_geometries_v1 WHERE cgm_asg_iliid = NEW.pvl_asg_iliid ) );
+
   RETURN NEW;
 END; $BODY$
 LANGUAGE plpgsql;
